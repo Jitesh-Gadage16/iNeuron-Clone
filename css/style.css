@@ -1,0 +1,276 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+.full-width{
+    width:100%;
+}
+
+.navbar-div{
+    height:75px;
+}
+
+.nav-logo{
+    width:100px;
+    flex-shrink: 0;
+    padding-right: 0.8rem;
+}
+.nav-logo img{
+    width:100%;
+}
+.main-navHeader{
+    background: #fff;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+    z-index: 1010;
+}
+
+.dropdown-btn{
+    background: none;
+    color: #1c1d1f;
+    border: none;
+}
+
+.nav-serchbtn button{
+    color: #1c1d1f;
+}
+
+.nav-serchbtn button:hover,.dropdown-btn:hover,.ineuron-coursediv:hover,.first-couse.dropdown a:hover{
+    color: #FC9E33!important;
+}
+.dropdown-btn:focus{
+    border: none;
+}
+.courses-dropdiv{
+    position:absolute!important;
+    top: 70px!important;
+    width:620px!important;
+}
+.profile-imgdiv{
+    background: blue;
+    height: 35px;
+    width: 35px;
+    border-radius: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.inueron-coursediv div{
+    font-family: udemy sans,sf pro text,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 1.4rem;
+    color: #1c1d1f;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 2.4rem 0 0;
+}
+
+.nav-serachbar{
+    flex-grow: 1;
+    height: 46px;
+    border: 1px solid #1c1d1f;
+    border-radius: 9999px;
+    background-color: #f7f9fa;
+    margin: 0 1.2rem;
+}
+
+.nav-serchbtn button{
+    background: transparent;
+    border: none;
+    margin-right: 15px;
+}
+
+.nav-inputform input{
+    background-color: transparent;
+    border:none;
+    border: 0;
+    flex: 1;
+    width: 600px;
+}
+
+.secondary-navbar{
+    background: #fff;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+    z-index: 1010;
+    border-top: 1px solid #d1d7dc;
+    /* max-width: 100%; */
+    max-height: 4.8rem;
+}
+
+.dropdown-toggle::after {
+    content: none!important;
+}
+.courses-div{
+    padding: 0.8rem 1.6rem;
+    /* position: static!important; */
+}
+
+.dropdown:hover .dropdown-menu,
+            .btn-group:hover .dropdown-menu {
+                display: block;
+            }
+
+.dropdown-btn::after{
+    content: '';
+    border-left: 0.8rem solid transparent;
+    border-right: 0.8rem solid transparent;
+    border-bottom: 0.8rem solid #1c1d1f;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+} 
+
+.sec-menu{
+    position:absolute;
+    left:0;
+    top:50px;
+
+}
+
+.flex-1{
+    flex: 1 0 0;
+}
+
+span#basic-addon1 {
+    background: transparent;
+    border: none;
+}
+
+.searchbar-div{
+    border: 1px solid;
+    border-radius: 20px;
+}
+.search-ico{
+    background: transparent;
+    border: none;
+}
+
+.course-serch{
+    border: none!important;
+    border-top-right-radius: 20px!important;
+    border-bottom-right-radius: 20px!important;
+}
+
+.course-serch::placeholder{
+    color: #233c7b!important;
+}
+
+.first-couse.d-flex {
+    width: 300px;
+}
+
+.course-column-one:not(:last-child) {
+    border-right: 1px solid lightgray;
+}
+
+
+
+@media (max-width: 770px){
+.mobile {
+    display: block !important;
+}
+}
+
+.mobile{
+    display: none !important
+}
+
+.sidenavMenu {
+    height: 100%;
+    width: 75%;
+    position: fixed;
+    z-index: 99999;
+    top: 0px;
+    left: -1000px;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.8s;
+    /* padding-top: 60px; */
+}
+
+#backdrop {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: rgba(28,29,31,.8);
+    pointer-events: all;
+    display: none;
+}
+
+#menu-close{
+    position: absolute;
+    right: 12px;
+    background: blue;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+.profile-img{
+    background: #1c1d1f;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    object-fit: cover;
+    color: #fff;
+    width: 64px;
+    height: 64px;
+    font-family: udemy sans,-apple-system,BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.02rem;
+    font-size: 25px;
+}
+
+.active-dot{
+    position: absolute;
+    font-size: 1.6rem;
+    top: 0;
+    right: 2%;
+    background: #a435f0;
+    color: #fff;
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 100px;
+}
+
+.user-nameDiv p{
+    font-size:12px;
+    font-weight: 500;
+    color: #6a6f73;
+}
+
+.mob-nav-header{
+    background: #f7f9fa;
+}
+
+.mobcourse-priHeading{
+    color: #6a6f73;
+    font-weight: 700;
+    line-height: 1.2;
+}
+.mob-coursename-div{
+    color: #1c1d1f;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 16px;
+}
+
+.mob-courses-div:not(:first-child){
+    
+    border-top: 1px solid #d1d7dc;
+    padding-bottom: 15px;
+
+}
+
