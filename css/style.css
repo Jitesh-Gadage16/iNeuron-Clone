@@ -280,13 +280,13 @@ span#basic-addon1 {
 
 
 .slider-main-div{
-    height: 500px;
+    height: 450px;
     
     width:1250px;
     margin:0 auto!important;
 }
 .data-scince-courses{
-    height:550px;
+    /* height:550px; */
     border:1px solid lightgray;
 }
 .data-scince-courses p{
@@ -301,6 +301,7 @@ span#basic-addon1 {
     width: 300px;
     /* background: red; */
     border: 1px solid lightgray;
+    height:inherit;
 }
 
 .card-name.mt-2 {
@@ -309,8 +310,12 @@ span#basic-addon1 {
     text-overflow: ellipsis;
     overflow: hidden;
 }
+.tabs-div.data-science-div{
+    cursor:pointer;
+}
 .tabs-div.data-science-div.active {
     font-weight: 700;
+    
 }
 
 #hoverdiv{
