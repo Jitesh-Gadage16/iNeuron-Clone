@@ -411,6 +411,11 @@ button.enroll-now {
     color:#233C7B;
 }
 
+
+.mob-banner-div {
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+    height: 600px;
+}
 .banner-subtitle{
     position: absolute;
     bottom: 0;
@@ -422,6 +427,14 @@ button.enroll-now {
 
 h1.bbaner-bottom-heading {
     font-size: 30px;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: #f28900;
+}
+
+.banner-bottom p {
+    font-size: 15px;
+    font-weight: 500;
 }
 
 #hoverdiv{
