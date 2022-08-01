@@ -274,3 +274,61 @@ span#basic-addon1 {
 
 }
 
+.slider-container{
+    background:#E0E0E0!important;
+}
+
+
+.slider-main-div{
+    height: 500px;
+    
+    width:1250px;
+    margin:0 auto!important;
+}
+.data-scince-courses{
+    height:550px;
+    border:1px solid lightgray;
+}
+.data-scince-courses p{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    margin-bottom: 16px;
+    max-width: 50rem;
+}
+
+.course-cards-div {
+    width: 300px;
+    /* background: red; */
+    border: 1px solid lightgray;
+}
+
+.card-name.mt-2 {
+    font-weight: 700;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.tabs-div.data-science-div.active {
+    font-weight: 700;
+}
+
+#hoverdiv{
+    display:none;
+}
+
+.slick-prev:before {
+    content: "<";
+    color: red;
+    font-size: 30px;
+  }
+  
+  .slick-next:before {
+    content: ">";
+    color: red;
+    font-size: 30px;
+  }
+  .courses-tabs-wrapper{
+    overflow: auto;
+   
+  }
