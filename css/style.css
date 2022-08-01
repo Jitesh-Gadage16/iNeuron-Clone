@@ -281,10 +281,41 @@ span#basic-addon1 {
 
 
 .slider-main-div{
-    height: 450px;
+    height: 500px;
     
     width:100%;
     margin:0 auto!important;
+}
+
+.header-cards-div{
+    bottom:0px;
+}
+
+.head-card-name.bg-white {
+    border-radius: 10px;
+}
+
+.head-card-name div{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    border-radius: 13px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+
+}
+
+.margin-t80{
+    margin-top:80px;
+}
+.head-card-name div span{
+    font-size: 40px;
+    font-weight: 700;
+    color: #387ca2;
+}
+
+.header-cards{
+    /* border:1px solid #000;    */
 }
 .data-scince-courses{
     /* height:550px; */
@@ -320,7 +351,12 @@ span#basic-addon1 {
 }
 
 .banner-heading-div{
-    padding-left: 70px
+    /* padding-left: 70px; */
+    width: 1250px;
+    margin: 0 auto;
+}
+.banner-leftdiv{
+    width: 50%;
 }
 
 .banner-heading-div h1{
@@ -329,6 +365,9 @@ span#basic-addon1 {
     text-transform: capitalize;
 }
 
+.banner-img-div {
+    right: 0;
+}
 .banner-heading-div p{
     padding-right: 70px;
     font-size: 24px;
