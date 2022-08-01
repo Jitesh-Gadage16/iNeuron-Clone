@@ -4,6 +4,10 @@
     box-sizing:border-box;
 }
 
+.body{
+    background-color:#fff;
+}
+
 
 .full-width{
     width:100%;
@@ -315,6 +319,30 @@ span#basic-addon1 {
     bottom:0px;
 }
 
+.course-selection-div h2{
+    font-size:60px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color:#233C7B;
+}
+
+.course-selection-div h2::after{
+    content: '';
+    width: 300px;
+    height: 5px;
+    display: block;
+    /* background-color:#f28900; */
+    background: linear-gradient(to right,transparent,#f28900,transparent);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 10px auto;
+}
+
+.course-primary-div{
+    padding-top: 50px;
+}
+
 .head-card-name.bg-white {
     border-radius: 10px;
     width: 300px;
@@ -345,6 +373,8 @@ span#basic-addon1 {
 .data-scince-courses{
     /* height:550px; */
     border:1px solid lightgray;
+    box-shadow: rgb(19 46 112 / 10%) 0 1rem 4rem;
+    border-radius: 10px;
 }
 .data-scince-courses p{
     overflow: hidden;
@@ -370,9 +400,12 @@ span#basic-addon1 {
 .tabs-div{
     cursor:pointer;
     flex: 0 0 auto;
+    color: #6a6f73;
+    font-weight: 700;
 }
 .tabs-div.data-science-div.active {
     font-weight: 700;
+    color:#000;
     
 }
 
@@ -456,3 +489,20 @@ h1.bbaner-bottom-heading {
     overflow: auto;
    
   }
+
+  .footer{
+    background: #233C7B;
+  }
+  
+
+  .footer-logoimg,.iso-certificate{
+    width: 100px;
+  }
+  a.nav-link.p-0.text-white {
+    color: #f6a655!important;
+    font-weight: 500;
+}
+
+a.nav-link.p-0.text-white span {
+    margin-right: 10px;
+}
