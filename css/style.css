@@ -293,6 +293,7 @@ span#basic-addon1 {
 
 .head-card-name.bg-white {
     border-radius: 10px;
+    width: 300px;
 }
 
 .head-card-name div{
