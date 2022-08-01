@@ -1,9 +1,14 @@
 // $('.single-item').slick();
-const el = document.getElementById('hoverdiv');
+const cousre = document.getElementsByClassName('course-cards-div');
 
 const hiddenDiv = document.getElementById('courde-disc');
 
+console.log(cousre)
+
 // ✅ Show hidden DIV on hover
-el.addEventListener('mouseover', function handleMouseOver() {
-//   hiddenDiv.style.display = 'block';
-console("bhai chal rha")
+cousre.addEventListener('click',  myFunction);
+
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";
+  }

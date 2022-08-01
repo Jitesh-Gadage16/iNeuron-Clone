@@ -27,6 +27,12 @@
     z-index: 1010;
 }
 
+.mobile-nav{
+
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+
+}
+
 .dropdown-btn{
     background: none;
     color: #1c1d1f;
@@ -176,6 +182,9 @@ span#basic-addon1 {
 @media (max-width: 770px){
 .mobile {
     display: block !important;
+}
+.margin-t80{
+    margin-top:0!important;
 }
 }
 
@@ -343,7 +352,7 @@ span#basic-addon1 {
     text-overflow: ellipsis;
     overflow: hidden;
 }
-.tabs-div.data-science-div{
+.tabs-div{
     cursor:pointer;
 }
 .tabs-div.data-science-div.active {
