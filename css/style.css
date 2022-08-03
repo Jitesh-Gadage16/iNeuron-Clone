@@ -385,9 +385,6 @@ span#basic-addon1 {
   color: #387ca2;
 }
 
-.header-cards {
-  /* border:1px solid #000;    */
-}
 .data-scince-courses {
   /* height:550px; */
   border: 1px solid lightgray;
@@ -832,7 +829,7 @@ button.view-morebtn {
   /* background-color: #b32532; */
   /* color: #FFF; */
   height: 400px;
-  margin: 10px ;
+  margin: 10px 8px ;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -883,3 +880,6 @@ button{
 .slick-dots li{
   list-style: none;
 }
+
+
+
