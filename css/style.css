@@ -434,7 +434,10 @@ button.enroll-now {
 .banner-heading-div span,
 .bbaner-bottom-heading span {
   /* color: #387ca2; */
-  color: #233c7b;
+  /* color: #233c7b; */
+  background: -webkit-linear-gradient(#CB4747, #B0249A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .mob-banner-div {
@@ -623,6 +626,16 @@ img.company-img {
   .peyment-acceptDiv{
     width: 350px!important;
   }
+  .tech-avengers-div{
+    overflow: auto;
+    justify-content: space-between!important;
+
+  }
+
+  .avengers-card-div {
+    min-width: 350px;
+    margin-right: 25px;
+}
 }
 
 .anim-typewriter {
@@ -638,4 +651,91 @@ img.company-img {
   to {
     width: 300px;
   }
+}
+
+
+/* #sidebar {
+  display: none;
+}
+.cart:hover #sidebar {
+  display:block;
+} */
+
+
+.avengers-card-div {
+  width: 300px;
+  text-align: center;
+  /* box-shadow: 5px 5px 5px bisque; */
+  box-shadow: 0px 4px 10px rgb(37 37 37 / 23%);
+  
+}
+
+.avengers-cardimg-div {
+  height: 200px;
+}
+
+.avanege-name {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 20px 0;
+}
+
+.avenger-disc {
+  font-size: 15px;
+  font-weight: 500;
+  color: #404569;
+}
+
+.avenger-social {
+  padding: 15px 0;
+}
+
+.tech-avengers-div{
+  padding:50px 0 70px;
+}
+
+.hall-of-fameDiv{
+  /* width: 300px; */
+}
+
+.fame-sudents {
+  box-shadow: 0.4rem 0.7rem 2.8rem 0 rgb(68 77 91 / 14%);
+  width: 300px;
+  height:450px;
+  padding:15px;
+}
+
+.fame-sudents:hover{
+  transform: scale(1.05);
+}
+
+.students-imgdiv{
+  width: 150px;
+  height: 150px;
+  background:#fff;
+  border-radius: 50%;
+  box-shadow: 0.4rem 0.7rem 2.8rem 0 rgb(68 77 91 / 14%);
+
+}
+
+.student-img{
+  width:130px;
+  border-radius: 50%;
+}
+
+
+.student-name {
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+.student-disc{
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 30px;
+
 }
