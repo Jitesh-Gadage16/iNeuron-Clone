@@ -409,6 +409,11 @@ span#basic-addon1 {
   height: inherit;
 }
 
+.course-cards-div a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .card-name.mt-2 {
   font-weight: 700;
   white-space: nowrap;
@@ -788,4 +793,93 @@ img.company-img {
     /* -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis; */ */
+}
+
+button.view-morebtn {
+  background: #233c7b;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: none;
+}
+
+.tabs-div.active {
+  border-bottom: 2px solid;
+}
+
+
+
+
+
+.slick-next, .slick-prev{
+  z-index: 5;
+}
+.slick-next{
+  right: 15px;
+}
+.slick-prev{
+  left: 15px;
+}
+.slick-next:before, .slick-prev:before{
+  color: #000;
+  font-size: 26px;
+}
+
+
+.slick-initialized .slick-slide{
+  /* background-color: #b32532; */
+  /* color: #FFF; */
+  height: 400px;
+  margin: 10px ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+button{
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.slide-arrow{
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+}
+.prev-arrow{
+  left: -40px;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 15px solid #113463;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+.next-arrow{
+  right: -40px;
+  width: 0;
+  height: 0;
+  border-right: 0 solid transparent;
+  border-left: 15px solid #113463;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.slick-dots{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.slick-dots li{
+  list-style: none;
 }

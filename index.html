@@ -683,20 +683,25 @@
                         </div>
 
                         <div class="all-courses-tabsdiv mt-3">
-                            <div class="courses-tabs-wrapper d-flex gap-4 my-3">
-                                <div class="tabs-div py-2 data-science-div active " onclick="divVisibility('Div1');">
-                                    Live
+                            <div class="courses-tabs-wrapper allTabs d-flex gap-4 my-3">
+                                
+                                <div class="tabs-div py-2 liveprogramTab active">
+                                    Live Programs</div>
+                                <div class="tabs-div py-2 affordableprogramTab" >Affordable
                                     Programs</div>
-                                <div class="tabs-div py-2 webdev-tab" onclick="divVisibility('Div2');">Affordable
-                                    Programs</div>
-                                <div class="tabs-div py-2">Community Programs</div>
-                                <div class="tabs-div py-2">One Neuron</div>
-                                <div class="tabs-div py-2">Test Series</div>
+                                <div class="tabs-div py-2 CommunityProgramsTab" >Community Programs</div>
+                                <div class="tabs-div py-2 OneNeuronTab" >One Neuron</div>
+                                <div class="tabs-div py-2 TestSeriesTab" >Test Series</div>
 
                             </div>
 
                             <div class="data-scince-courses">
-                                <div id="Div1" class="data-scince-course  p-4 ">
+
+                                
+
+                                <!--------------------------- Live Program  --------------------------------------->
+
+                                <div  class="Live-Program  p-4 ">
                                     <h3 class="select-cousre-title">Live Progams</h3>
                                     <p>Get your program with live "instructor led" learning. Lorem, ipsum dolor sit amet
                                         consectetur
@@ -706,7 +711,23 @@
                                         cum!</p>
 
                                     <div class="course-card-maindiv d-flex gap-5 multiple-items single-item">
-                                        <div class="course-cards-div mx-4 p-3 " id="hoverdiv" style="display:none;">
+
+                                        <div class="course-cards-div mx-4 p-3 ">
+                                            <a href="https://ineuron.ai/course/Full-Stack-Data-Science-BootCamp-2.0">
+                                                <div class="card-top">
+                                                    <div class="card-top-imgdiv">
+                                                        <img src="./assets//fulstack-datascience.jpg" alt=""
+                                                            class="card-img">
+                                                    </div>
+                                                    <div class="card-name mt-2">Full Stack Data Science BootCamp 2.0
+                                                    </div>
+                                                    <div class="card-owner py-3">Krish Naik</div>
+                                                    <div class="card-amount">₹17700.00</div>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="course-cards-div mx-4 p-3 ">
                                             <div class="card-top">
                                                 <div class="card-top-imgdiv">
                                                     <img src="./assets/2.png" alt="" class="card-img">
@@ -800,9 +821,17 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                    <div class="view-more-button d-flex justify-content-center align-items-center py-5">
+                                        <button class="view-morebtn">View More</button>
+                                    </div>
                                 </div>
-                                <div id="Div2" class="data-scince-course  p-4 " style="display: none;">
-                                    <h3 class="select-cousre-title">Web Developemnt</h3>
+
+                                <!--------------------------- Affordabe Program  --------------------------------------->
+
+
+                                <div  class="Affordabe-Program  p-4 " style="display: none;">
+                                    <h3 class="select-cousre-title">Affordabe Program</h3>
                                     <p>Get your program with live "instructor led" learning. Lorem, ipsum dolor sit amet
                                         consectetur
                                         adipisicing elit. Nulla ipsa nam eius amet facere odit obcaecati consectetur
@@ -866,8 +895,237 @@
 
 
                                     </div>
+
+                                    <div class="view-more-button d-flex justify-content-center align-items-center py-5">
+                                        <button class="view-morebtn">View More</button>
+                                    </div>
                                 </div>
+
+
+                                <!--------------------------- Community Program  --------------------------------------->
+
+                                <div  class="Community-Program  p-4 " style="display: none;">
+                                    <h3 class="select-cousre-title">Commnunity Program</h3>
+                                    <p>Get your program with live "instructor led" learning. Lorem, ipsum dolor sit amet
+                                        consectetur
+                                        adipisicing elit. Nulla ipsa nam eius amet facere odit obcaecati consectetur
+                                        dolorum
+                                        aliquid
+                                        cum!</p>
+
+                                    <div class="course-card-maindiv d-flex gap-4 ">
+                                        <div class="course-cards-div mx-4 p-3 " id="hoverdiv" style="display:none;">
+                                            <div class="card-top">
+                                                <div class="card-top-imgdiv">
+                                                    <img src="./assets/2.png" alt="" class="card-img"
+                                                        onmouseover="bigImg(e)">
+                                                </div>
+                                                <div class="card-name mt-2">DAS for FAANG with python and Javascript
+                                                </div>
+                                                <div class="card-owner py-3">Hitesh Choudhary</div>
+                                                <div class="card-amount">₹4000</div>
+                                            </div>
+                                        </div>
+
+                                        <!-- <div id="courde-disc" style="display:none;">
+                            hello
+                        </div> -->
+
+                                        <div class="course-cards-div mx-4 p-3 ">
+                                            <div class="card-top">
+                                                <div class="card-top-imgdiv">
+                                                    <img src="./assets/youtube-mastery.jpg" alt="" class="card-img">
+                                                </div>
+                                                <div class="card-name mt-2">Youtube Mastery Batch 2 in Hindi</div>
+                                                <div class="card-owner py-3">Amresh Bharti</div>
+                                                <div class="card-amount">₹4000</div>
+                                            </div>
+                                        </div>
+                                        <div class="course-cards-div mx-4 p-3 ">
+                                            <div class="card-top">
+                                                <div class="card-top-imgdiv">
+                                                    <img src="./assets/62d144bf5af3c72263428ffd.jpg" alt=""
+                                                        class="card-img">
+                                                </div>
+                                                <div class="card-name mt-2">Advance Facebook Marketing Course in Hindi
+                                                </div>
+                                                <div class="card-owner py-3">Hitesh Choudhary</div>
+                                                <div class="card-amount">₹3000</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="course-cards-div mx-4 p-3">
+                                            <div class="card-top">
+                                                <div class="card-top-imgdiv">
+                                                    <img src="./assets/2.png" alt="" class="card-img">
+                                                </div>
+                                                <div class="card-name mt-2">DAS for FAANG with python</div>
+                                                <div class="card-owner py-3">Hitesh Choudhary</div>
+                                                <div class="card-amount">₹4000</div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+
+                                    <div class="view-more-button d-flex justify-content-center align-items-center py-5">
+                                        <button class="view-morebtn">View More</button>
+                                    </div>
+                                </div>
+
+                                <!--------------------------- One Neuron--------------------------------------->
+
+                                <div  class="One-Neuron  p-4 " style="display: none;">
+                                    <h3 class="select-cousre-title">One Neuron</h3>
+                                    <p>Get your program with live "instructor led" learning. Lorem, ipsum dolor sit amet
+                                        consectetur
+                                        adipisicing elit. Nulla ipsa nam eius amet facere odit obcaecati consectetur
+                                        dolorum
+                                        aliquid
+                                        cum!</p>
+
+                                    <div class="course-card-maindiv d-flex gap-4 ">
+                                        <div class="course-cards-div mx-4 p-3 " id="hoverdiv" style="display:none;">
+                                            <div class="card-top">
+                                                <div class="card-top-imgdiv">
+                                                    <img src="./assets/2.png" alt="" class="card-img"
+                                                        onmouseover="bigImg(e)">
+                                                </div>
+                                                <div class="card-name mt-2">DAS for FAANG with python and Javascript
+                                                </div>
+                                                <div class="card-owner py-3">Hitesh Choudhary</div>
+                                                <div class="card-amount">₹4000</div>
+                                            </div>
+                                        </div>
+
+                                        <!-- <div id="courde-disc" style="display:none;">
+                            hello
+                        </div> -->
+
+                                        <div class="course-cards-div mx-4 p-3 ">
+                                            <div class="card-top">
+                                                <div class="card-top-imgdiv">
+                                                    <img src="./assets/youtube-mastery.jpg" alt="" class="card-img">
+                                                </div>
+                                                <div class="card-name mt-2">Youtube Mastery Batch 2 in Hindi</div>
+                                                <div class="card-owner py-3">Amresh Bharti</div>
+                                                <div class="card-amount">₹4000</div>
+                                            </div>
+                                        </div>
+                                        <div class="course-cards-div mx-4 p-3 ">
+                                            <div class="card-top">
+                                                <div class="card-top-imgdiv">
+                                                    <img src="./assets/62d144bf5af3c72263428ffd.jpg" alt=""
+                                                        class="card-img">
+                                                </div>
+                                                <div class="card-name mt-2">Advance Facebook Marketing Course in Hindi
+                                                </div>
+                                                <div class="card-owner py-3">Hitesh Choudhary</div>
+                                                <div class="card-amount">₹3000</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="course-cards-div mx-4 p-3">
+                                            <div class="card-top">
+                                                <div class="card-top-imgdiv">
+                                                    <img src="./assets/2.png" alt="" class="card-img">
+                                                </div>
+                                                <div class="card-name mt-2">DAS for FAANG with python</div>
+                                                <div class="card-owner py-3">Hitesh Choudhary</div>
+                                                <div class="card-amount">₹4000</div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+
+                                    <div class="view-more-button d-flex justify-content-center align-items-center py-5">
+                                        <button class="view-morebtn">View More</button>
+                                    </div>
+                                </div>
+
+                                <!--------------------------- Text Series-------------------------------------->
+
+                                <div  class="Text-Series  p-4 " style="display: none;">
+                                    <h3 class="select-cousre-title">Text Series</h3>
+                                    <p>Get your program with live "instructor led" learning. Lorem, ipsum dolor sit amet
+                                        consectetur
+                                        adipisicing elit. Nulla ipsa nam eius amet facere odit obcaecati consectetur
+                                        dolorum
+                                        aliquid
+                                        cum!</p>
+
+                                    <div class="course-card-maindiv d-flex gap-4 ">
+                                        <div class="course-cards-div mx-4 p-3 " id="hoverdiv" style="display:none;">
+                                            <div class="card-top">
+                                                <div class="card-top-imgdiv">
+                                                    <img src="./assets/2.png" alt="" class="card-img"
+                                                        onmouseover="bigImg(e)">
+                                                </div>
+                                                <div class="card-name mt-2">DAS for FAANG with python and Javascript
+                                                </div>
+                                                <div class="card-owner py-3">Hitesh Choudhary</div>
+                                                <div class="card-amount">₹4000</div>
+                                            </div>
+                                        </div>
+
+                                        <!-- <div id="courde-disc" style="display:none;">
+                            hello
+                        </div> -->
+
+                                        <div class="course-cards-div mx-4 p-3 ">
+                                            <div class="card-top">
+                                                <div class="card-top-imgdiv">
+                                                    <img src="./assets/youtube-mastery.jpg" alt="" class="card-img">
+                                                </div>
+                                                <div class="card-name mt-2">Youtube Mastery Batch 2 in Hindi</div>
+                                                <div class="card-owner py-3">Amresh Bharti</div>
+                                                <div class="card-amount">₹4000</div>
+                                            </div>
+                                        </div>
+                                        <div class="course-cards-div mx-4 p-3 ">
+                                            <div class="card-top">
+                                                <div class="card-top-imgdiv">
+                                                    <img src="./assets/62d144bf5af3c72263428ffd.jpg" alt=""
+                                                        class="card-img">
+                                                </div>
+                                                <div class="card-name mt-2">Advance Facebook Marketing Course in Hindi
+                                                </div>
+                                                <div class="card-owner py-3">Hitesh Choudhary</div>
+                                                <div class="card-amount">₹3000</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="course-cards-div mx-4 p-3">
+                                            <div class="card-top">
+                                                <div class="card-top-imgdiv">
+                                                    <img src="./assets/2.png" alt="" class="card-img">
+                                                </div>
+                                                <div class="card-name mt-2">DAS for FAANG with python</div>
+                                                <div class="card-owner py-3">Hitesh Choudhary</div>
+                                                <div class="card-amount">₹4000</div>
+                                            </div>
+                                        </div>
+
+
+
+
+                                    </div>
+
+                                    <div class="view-more-button d-flex justify-content-center align-items-center py-5">
+                                        <button class="view-morebtn">View More</button>
+                                    </div>
+                                </div>
+
+
                             </div>
+
+
+
 
 
 
@@ -895,7 +1153,7 @@
 
                         <h4 class="best-of-best text-center">Best Of Best In There Field</h4>
 
-                        <div class="tech-avengers-div d-flex   align-items-center py-5">
+                        <div class="tech-avengers-div    align-items-center py-5">
 
 
                             <div class="avengers-card-div">
@@ -966,6 +1224,27 @@
                                 </div>
 
                             </div>
+
+
+                            <div class="avengers-card-div">
+                                <div class="avengers-cardimg-div d-flex justify-content-center align-items-center">
+                                    <img src="./assets/Group 2.png" style="width:180px;" alt="" class="avenger-img">
+                                </div>
+                                <div class="avenger-bottom">
+                                    <div class="avanege-name">
+                                        Hitesh choudhary
+                                    </div>
+                                    <div class="avenger-disc">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, iure.
+                                    </div>
+                                    <div class="avenger-social">
+                                        <i class="fa-brands fa-youtube "></i>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
@@ -979,7 +1258,8 @@
                     <div class="row">
                         <h2 class="text-center course-primary-div ">“Pure Hardwork, No Shortcuts!”</h2>
 
-                        <div class="headercard-wrapper flex-wrap d-flex justify-content-around align-items-center  py-3">
+                        <div
+                            class="headercard-wrapper flex-wrap d-flex justify-content-around align-items-center  py-3">
                             <div class="header-cards  ">
                                 <div
                                     class="header-card-wrapper d-flex flex-column justify-content-center align-items-center text-center">
@@ -1533,26 +1813,54 @@
 
             <script src="https://kit.fontawesome.com/cb9a997e82.js" crossorigin="anonymous"></script>
 
+            
+
 
 
 
 
             <script>
 
-                function bigImg(e) {
-                    const ccsc = e.target.value;
-                    console.log(ccsc)
+                $('.tabs-div').click(function () {
+                    $('.tabs-div').removeClass('active');
+                    $(this).addClass('active');
+                });
 
-                }
-
-
-
-                function viewAllSeries() {
-                    // alert("bhsbhb");
-                    $('.score_common').show();
-                    $('.seriesscorecard').hide();
-
-                }
+                $('.liveprogramTab').click(function () {
+                    $('.Affordabe-Program').hide();
+                    $('.Community-Program').hide();
+                    $('.One-Neuron').hide();
+                    $('.Text-Series').hide();
+                    $('.Live-Program').show();
+                })
+                $('.affordableprogramTab').click(function () {
+                    $('.Affordabe-Program').show();
+                    $('.Community-Program').hide();
+                    $('.One-Neuron').hide();
+                    $('.Text-Series').hide();
+                    $('.Live-Program').hide();
+                })
+                $('.CommunityProgramsTab').click(function () {
+                    $('.Affordabe-Program').hide();
+                    $('.Community-Program').show();
+                    $('.One-Neuron').hide();
+                    $('.Text-Series').hide();
+                    $('.Live-Program').hide();
+                })
+                $('.OneNeuronTab').click(function () {
+                    $('.Affordabe-Program').hide();
+                    $('.Community-Program').hide();
+                    $('.One-Neuron').show();
+                    $('.Text-Series').hide();
+                    $('.Live-Program').hide();
+                })
+                $('.TestSeriesTab').click(function () {
+                    $('.Affordabe-Program').hide();
+                    $('.Community-Program').hide();
+                    $('.One-Neuron').hide();
+                    $('.Text-Series').show();
+                    $('.Live-Program').hide();
+                })
 
 
 
@@ -1563,7 +1871,7 @@
             </script>
 
             <script>
-                var divs = ["Div1", "Div2"];
+                var divs = ["Div0", "Div1", "Div2", "Div3", "Div4", "Div5"];
                 var visibleDivId = null;
                 function divVisibility(divId) {
                     if (visibleDivId === divId) {
@@ -1586,13 +1894,14 @@
                             console.log("visibleDivId", visibleDivId)
                             console.log("divId", divId)
                             div.style.display = "block";
-                            tabsDiv.removeClass = "active";
+                            // tabsDiv.removeClass = "active";
                             console.log("tabsDiv", tabsDiv)
 
                         } else {
                             console.log("divIddd", divId)
-                            tabsDiv.addClass = "active";
+                            // tabsDiv.addClass = "active";
                             div.style.display = "none";
+
                         }
                     }
                 }
@@ -1638,6 +1947,35 @@
 
 
             <script>
+
+
+$(document).ready(function(){
+    $('.tech-avengers-div').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+    nextArrow: '<button class="slide-arrow next-arrow"></button>',
+      dots: true,
+      speed: 300,
+      infinite: true,
+      autoplaySpeed: 5000,
+      autoplay: true,
+      responsive: [
+    {
+      breakpoint: 991,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+  ]
+    });
+  });
 
                 // $(document).on('.dropdown', '.keep-open', function (e) {
                 //     e.stopPropagation();
