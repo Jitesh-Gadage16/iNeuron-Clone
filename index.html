@@ -17,11 +17,14 @@
     <script src="jquery-3.6.0.min.js"></script>
 
     <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
         integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -451,7 +454,7 @@
                     <div id="menu-close" style="display: none;" onclick="" class="menu-img menu-close">
 
                         <img loading="lazy" onclick="closeNav()" style="height: 30px; width: 30px;"
-                            src="https://ineuron.ai/images/close.svg" alt="Play fantasy games online">
+                            src="./assets/download.png" alt="Play fantasy games online">
                     </div>
                     <div class="mob-logo">
                         <img src="./assets/ineuron-logo.png" style="width: 100px;" alt="iNeuron" class="mob-logoimg">
@@ -535,20 +538,20 @@
         </div>
     </div>
 
-    <div class="mobile-hero-section d-xs-block d-sm-block d-md-none d-lg-none d-xl-none mt-3">
+    <div class="mobile-hero-section d-xs-block d-sm-block d-md-none d-lg-none d-xl-none mt-3" data-aos="fade-up" data-aos-duration="2000">
         <div class="container">
             <div class="row">
                 <div class="col-12 ">
                     <div class="mob-banner-div">
                         <!-- <img src="./assets/Untitleddd.png"  alt="" style="width:100%;" class=" hero-mob-banner"> -->
                         <div class="banner-top position-relative">
-                            <img src="./assets/hero-influencers1.png" style="width: 100%;" alt=""
+                            <img src="./assets/hero-influencers1.webp" style="width: 100%;" alt=""
                                 class="banner-top-img">
                             <p class="banner-subtitle">Learn From the best of Industry</p>
                         </div>
                         <div class="banner-bottom text-center">
 
-                            <h1 class="bbaner-bottom-heading py-3">
+                            <h1 class="bbaner-bottom-heading py-3 ">
                                 Highest in <span class="text-blue"> Quality</span>,
                                 <span class="text-blue">Affordable </span> in Price
                             </h1>
@@ -570,7 +573,7 @@
     <div class="container-fluide slider-container d-none d-sm-none d-md-block d-lg-block">
         <div class="row  slider-main-div">
             <div class="col-md-12 col-12 d-flex justify-content-between position-relative">
-                <div class="banner-heading-div pt-4">
+                <div class="banner-heading-div pt-4" data-aos="fade-right" data-aos-duration="2000">
                     <div class="banner-leftdiv">
 
 
@@ -645,7 +648,7 @@
 
     <!------------------------------------------------ all courses section start  ------------------------------>
 
-    <div class="container py-5 ">
+    <div class="container py-5 " data-aos="fade-up" data-aos-duration="2000">
         <div class="row">
             <div class="col-md-12 col-12">
                 <div class="course-selection-div">
@@ -780,10 +783,10 @@
                                 cum!</p>
 
                             <div class="course-card-maindiv d-flex gap-4 ">
-                                <div class="course-cards-div mx-2 p-3 " id="hoverdiv" style="display:none;">
+                                <div class="course-cards-div mx-2 p-3 " id="hoverdiv"   style="display:none;">
                                     <div class="card-top">
                                         <div class="card-top-imgdiv">
-                                            <img src="./assets/2.png" alt="" class="card-img">
+                                            <img src="./assets/2.png" alt="" class="card-img" onmouseover="bigImg(e)">
                                         </div>
                                         <div class="card-name mt-2">DAS for FAANG with python and Javascript</div>
                                         <div class="card-owner py-3">Hitesh Choudhary</div>
@@ -845,18 +848,61 @@
 
     <!------------------------------------------------ all courses section start  ------------------------------>
 
-<!-- 
-    <div class="loader">
-        <span class="count">202</span>
-        <span class="count">202</span>
-    </div> -->
+    <div class="full-width our-product-section" data-aos="fade-up" data-aos-duration="2000">
+        <div class="container">
+            <div class="row">
+                
+                    <h2 class="text-center course-primary-div text-white">Our Products</h2>
+
+
+                    <div class="our-product-div d-flex justify-content-center align-items-center gap-4 mt-4">
+                        <div class="our-products-divone col-md-4 col-12">
+                            <div class="producrs-img-div">
+                                <img src="https://ineuron.ai/images/landing-page/products/jobPortal-icon.svg" style="width:150px;"  alt="" class="produt-item-img">
+                            </div>
+                            <div class="product-item-title">Job Portal</div>
+                            <div class="product-item-disc">Use Exceptinal Templates for a stand-out resumes minus the sign up process</div>
+                        </div>
+                        <div class="our-products-divone col-md-4 col-12">
+                            <div class="producrs-img-div">
+                                <img src="https://ineuron.ai/images/landing-page/products/Internship-icon.svg" style="width:150px;"  alt="" class="produt-item-img">
+                            </div>
+                            <div class="product-item-title">Intership Portals</div>
+                            <div class="product-item-disc">UiNeuron's self-paced internship portal prioritises hands-on training with 570+ internship projects.</div>
+                        </div>
+                        <div class="our-products-divone col-md-4 col-12">
+                            <div class="producrs-img-div">
+                                <img src="	https://ineuron.ai/images/landing-page/products/affilitatePortal-icon.svg" style="width:150px;"  alt="" class="produt-item-img">
+                            </div>
+                            <div class="product-item-title">Become an Affilate</div>
+                            <div class="product-item-disc">Explore affiliate marketing opportunities with iNeuron and attain financial frredom.</div>
+                        </div>
+                        <!-- <div class="our-products-divone">
+                            <div class="producrs-img-div">
+                                <img src="./assets/Internship-rafiki.png" style="width:150px;"  alt="" class="produt-item-img">
+                            </div>
+                            <div class="product-item-title">Job Portal</div>
+                            <div class="product-item-disc">Use Exceptinal Templates for a stand-out resumes minus the sign up process</div>
+                        </div>
+                        <div class="our-products-divone">
+                            <div class="producrs-img-div">
+                                <img src="./assets/Internship-rafiki.png" style="width:150px;"  alt="" class="produt-item-img">
+                            </div>
+                            <div class="product-item-title">Job Portal</div>
+                            <div class="product-item-disc">Use Exceptinal Templates for a stand-out resumes minus the sign up process</div>
+                        </div> -->
+                    </div>
+
+        </div>
+    </div>
+</div>
 
     <!------------------------------------------------ all courses section start  ------------------------------>
 
 
     <!--------------------------------------------- placement companies  ---------------------------------------->
 
-    <div class="full-width">
+    <div class="full-width" data-aos="fade-up" data-aos-duration="2000">
         <div class="container">
             <div class="row">
                 
@@ -970,13 +1016,30 @@
         </div>
     </div>
 
+    <div class="full-width bg-white-overlay mt-5">
+        <div class="we-acceptDivv d-flex justify-content-center align-items-center">
+            <div class="payments-div">
+                <div class="weaccept-text">
+                    Our Partnered Institutions
+                </div>
+                <div class="peyment-acceptDiv d-flex justify-content-center align-items-center">
+                    <img class="flex-1" src="https://ineuron.ai/images/landing-page/colleges/taxila.svg" alt="">
+                    <img class="flex-1" src="https://ineuron.ai/images/landing-page/colleges/vit.svg" alt="">
+                    <img class="flex-1" src="https://ineuron.ai/images/landing-page/colleges/keit.svg" alt="">
+                    <img class="flex-1" src="https://ineuron.ai/images/landing-page/colleges/gim.svg" alt="">
+                    <img class="flex-1" src="https://ineuron.ai/images/landing-page/colleges/malnad-college.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- footer section start  --->
-    <div class="full-width footer">
+    <div class="full-width footer" >
 
 
         <div class="container footer">
-            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 ">
+            <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5  ">
                 <div class="col mb-3">
                     <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
                         <img src="./assets/ineuron-logo-white.png" alt="ineuron-logo" class="footer-logoimg">
@@ -1064,6 +1127,14 @@
 
     <script>
 
+        function bigImg(e){
+            const ccsc =e.target.value;
+            console.log(ccsc)
+            
+        }
+
+
+
         function viewAllSeries() {
             // alert("bhsbhb");
             $('.score_common').show();
@@ -1074,6 +1145,10 @@
 
 
     </script>
+
+<script>
+    AOS.init();
+  </script>
 
     <script>
         var divs = ["Div1", "Div2"];
