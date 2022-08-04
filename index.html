@@ -17,14 +17,14 @@
     <script src="jquery-3.6.0.min.js"></script>
 
     <script src="./script.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
         integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,8 +47,7 @@
                             </div>
                             <div class="ineuron-coursediv dropdown d-flex h-100 px-4 position-relative">
                                 <div class="dropdownn d-flex">
-                                    <button class=" dropdown-btn dropdown-toggle" type="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    <button class=" dropdown-btn dropdown-toggle" type="button">
                                         Courses
                                     </button>
                                     <div class="dropdown-menu courses-dropdiv">
@@ -238,9 +237,24 @@
                                     aria-describedby="basic-addon1">
                             </div>
 
-                            <div class="ineuron-coursediv my-4 px-4 position-relative">
-                                <div class="all-portasl">
+                            <div
+                                class="ineuron-coursediv dropdown d-flex h-100 justify-content-center align-items-center px-4 position-relative">
+                                <div class="all-portasl d-flex">
                                     iNeueon Portals
+                                </div>
+
+                                <div class="dropdown-menu  all-portals ">
+                                    <div class="my-learning ">
+                                        <div
+                                            class="mycourse-one border-bottom d-flex  justify-content-between align-items-center gap-2 p-2">
+                                            <a class="dropdown-item" href="http://">One Neuron</a>
+                                        </div>
+                                        <div
+                                            class="mycourse-one  d-flex justify-content-between align-items-center gap-2 p-2">
+                                            <a class="dropdown-item" href="http://">Job Portal</a>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
                             <!-- <div class="ineuron-coursediv dropdownn  my-4 px-4 position-relative">
@@ -621,9 +635,12 @@
                                     <p>Digital entrepreneurs, Youtubers and content creators provide affordable courses
                                         across
                                         technologies.</p>
-                                    <button>
-                                        Enroll Now
-                                    </button>
+                                    <a class="fancy mt-3" href="#">
+                                        <span class="top-key"></span>
+                                        <span class="text">Enroll Now</span>
+                                        <span class="bottom-key-1"></span>
+                                        <span class="bottom-key-2"></span>
+                                    </a>
                                 </div>
                             </div>
 
@@ -636,28 +653,36 @@
 
 
 
-            <div class="container-fluide slider-container d-none d-sm-none d-md-block d-lg-block">
+            <div class="container-fluide slider-container d-none d-sm-none d-md-block d-lg-block position-relative">
+
+                <div class="headr-bg"></div>
                 <div class="row  slider-main-div">
                     <div class="col-md-12 col-12 d-flex justify-content-between position-relative">
                         <div class="banner-heading-div pt-4" data-aos="fade-right" data-aos-duration="2000">
-                            <div class="banner-leftdiv">
+                            <div class="banner-leftdiv pt-4">
 
 
                                 <h1>Highest in <span class="text-blue"> Quality </span>, <br> <Span
                                         class="text-blue">affordable</Span> in Price</h1>
 
-                                <p class="pt-2 m-0">Digital entrepreneurs, Youtubers and content creators provide
+                                <p class="pt-4 m-0">Digital entrepreneurs, Youtubers and content creators provide
                                     affordable
                                     courses across technologies.</p>
 
                                 <div class="enroll-nowbtn pt-4">
-                                    <button class="enroll-now ">
-                                        Enroll Now
-                                    </button>
+                                    <a class="fancy" href="#">
+                                        <span class="top-key"></span>
+                                        <span class="text">Enroll Now</span>
+                                        <span class="bottom-key-1"></span>
+                                        <span class="bottom-key-2"></span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="banner-img-div position-absolute">
+                        <div class="banner-img-div position-absolute ">
+                            <img src="./assets/hero-influencers1.webp" style="width:800px;" alt="">
+                        </div>
+                        <div class="banner-img-div position-absolute d-none">
                             <img src="./assets/Vector 1.png" style="width:800px;" alt="">
                         </div>
                     </div>
@@ -667,9 +692,35 @@
                 </div>
             </div>
 
+
+
+            <!-- <div class="card">
+                <div class="card-img"><img src="./assets//fulstack-datascience.jpg" alt="" class="card-img"></div>
+                <div class="card-info">
+                    <p class="text-title">Product title </p>
+                    <p class="text-body">Product description and details</p>
+                </div>
+                <div class="card-footer">
+                    <span class="text-title">$499.49</span>
+                    <div class="card-button">
+                        <svg class="svg-icon" viewBox="0 0 20 20">
+                            <path
+                                d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                            </path>
+                            <path
+                                d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                            </path>
+                            <path
+                                d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                            </path>
+                        </svg>
+                    </div>
+                </div>
+            </div> -->
+
             <!------------------------------------------------ all courses section start  ------------------------------>
 
-            <div class="container py-5 " >
+            <div class="container py-5 ">
                 <div class="row">
                     <div class="col-md-12 col-12">
                         <div class="course-selection-div">
@@ -684,24 +735,24 @@
 
                         <div class="all-courses-tabsdiv mt-3">
                             <div class="courses-tabs-wrapper allTabs d-flex gap-4 my-3">
-                                
+
                                 <div class="tabs-div py-2 liveprogramTab active">
                                     Live Programs</div>
-                                <div class="tabs-div py-2 affordableprogramTab" >Affordable
+                                <div class="tabs-div py-2 affordableprogramTab">Affordable
                                     Programs</div>
-                                <div class="tabs-div py-2 CommunityProgramsTab" >Community Programs</div>
-                                <div class="tabs-div py-2 OneNeuronTab" >One Neuron</div>
-                                <div class="tabs-div py-2 TestSeriesTab" >Test Series</div>
+                                <div class="tabs-div py-2 CommunityProgramsTab">Community Programs</div>
+                                <div class="tabs-div py-2 OneNeuronTab">One Neuron</div>
+                                <div class="tabs-div py-2 TestSeriesTab">Test Series</div>
 
                             </div>
 
                             <div class="data-scince-courses">
 
-                                
+
 
                                 <!--------------------------- Live Program  --------------------------------------->
 
-                                <div  class="Live-Program  p-4 ">
+                                <div class="Live-Program  p-4 ">
                                     <h3 class="select-cousre-title">Live Progams</h3>
                                     <p>Get your program with live "instructor led" learning. Lorem, ipsum dolor sit amet
                                         consectetur
@@ -713,116 +764,147 @@
                                     <div class="course-card-maindiv d-flex gap-5 multiple-items single-item">
 
                                         <div class="course-cards-div mx-4 p-3 ">
-                                            <a href="https://ineuron.ai/course/Full-Stack-Data-Science-BootCamp-2.0">
-                                                <div class="card-top">
-                                                    <div class="card-top-imgdiv">
-                                                        <img src="./assets//fulstack-datascience.jpg" alt=""
-                                                            class="card-img">
-                                                    </div>
-                                                    <div class="card-name mt-2">Full Stack Data Science BootCamp 2.0
-                                                    </div>
-                                                    <div class="card-owner py-3">Krish Naik</div>
-                                                    <div class="card-amount">₹17700.00</div>
+                                            <div class="card">
+                                                <div class="card-img"><img src="./assets/javascript.jpg" alt="" class="card-img"></div>
+                                                <div class="card-info">
+                                                    <p class="text-title">
+                                                        Full Stack Javascript Web Developer</p>
+                                                    <p class="text-body">Hitesh Choudhary</p>
                                                 </div>
-                                            </a>
-                                        </div>
-
-                                        <div class="course-cards-div mx-4 p-3 ">
-                                            <div class="card-top">
-                                                <div class="card-top-imgdiv">
-                                                    <img src="./assets/2.png" alt="" class="card-img">
+                                                <div class="card-footer">
+                                                    <span class="text-title">₹17700.00</span>
+                                                    <button class="cssbuttons-io-button">
+                                                       
+                                                        <span>Live</span>
+                                                      </button>
                                                 </div>
-                                                <div class="card-name mt-2">DAS for FAANG with python and Javascript
-                                                </div>
-                                                <div class="card-owner py-3">Hitesh Choudhary</div>
-                                                <div class="card-amount">₹4000</div>
                                             </div>
                                         </div>
 
-                                        <div id="courde-disc" style="display:none;">
-                                            hello
+                                        <div class="course-cards-div mx-4 p-3 ">
+                                            <div class="card">
+                                                <div class="card-img"><img src="./assets//fulstack-datascience.jpg" alt="" class="card-img"></div>
+                                                <div class="card-info">
+                                                    <p class="text-title">Full Stack Data Science BootCamp 2.0 </p>
+                                                    <p class="text-body">Krish Naik</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <span class="text-title">₹17700.00</span>
+                                                    <button class="cssbuttons-io-button">
+                                                       
+                                                        <span>Live</span>
+                                                      </button>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <div class="course-cards-div mx-4 p-3 ">
-                                            <div class="card-top">
-                                                <div class="card-top-imgdiv">
-                                                    <img src="./assets/youtube-mastery.jpg" alt="" class="card-img">
+                                            <div class="card">
+                                                <div class="card-img"><img src="./assets/youtube-mastery.jpg" alt="" class="card-img"></div>
+                                                <div class="card-info">
+                                                    <p class="text-title">YouTube Mastery Batch 2 in Hindi </p>
+                                                    <p class="text-body">Amresh Bharti</p>
                                                 </div>
-                                                <div class="card-name mt-2">Youtube Mastery Batch 2 in Hindi</div>
-                                                <div class="card-owner py-3">Amresh Bharti</div>
-                                                <div class="card-amount">₹4000</div>
+                                                <div class="card-footer">
+                                                    <span class="text-title">₹7000.00</span>
+                                                    <button class="cssbuttons-io-button">
+                                                       
+                                                        <span>Live</span>
+                                                      </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="course-cards-div mx-4 p-3 ">
+                                            <div class="card">
+                                                <div class="card-img"><img src="./assets/digital-marketing.jpg" alt="" class="card-img"></div>
+                                                <div class="card-info">
+                                                    <p class="text-title">Digital Marketing Batch 2 in Hindi </p>
+                                                    <p class="text-body">Amresh Bharti</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <span class="text-title">₹7000.00</span>
+                                                    <button class="cssbuttons-io-button">
+                                                       
+                                                        <span>Live</span>
+                                                      </button>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="course-cards-div mx-4 p-3 ">
-                                            <div class="card-top">
-                                                <div class="card-top-imgdiv">
-                                                    <img src="./assets/62d144bf5af3c72263428ffd.jpg" alt=""
-                                                        class="card-img">
+                                            <div class="card">
+                                                <div class="card-img"><img src="./assets/dsa.jpg" alt="" class="card-img"></div>
+                                                <div class="card-info">
+                                                    <p class="text-title">DSA for FAANG preparation with Python and JavaScript </p>
+                                                    <p class="text-body">Anurag Tiwari ,Hitesh Choudhary </p>
                                                 </div>
-                                                <div class="card-name mt-2">Advance Facebook Marketing Course in Hindi
+                                                <div class="card-footer">
+                                                    <span class="text-title">₹4000.00</span>
+                                                    <button class="cssbuttons-io-button">
+                                                       
+                                                        <span>Live</span>
+                                                      </button>
                                                 </div>
-                                                <div class="card-owner py-3">Hitesh Choudhary</div>
-                                                <div class="card-amount">₹3000</div>
                                             </div>
                                         </div>
 
                                         <div class="course-cards-div mx-4 p-3">
-                                            <div class="card-top">
-                                                <div class="card-top-imgdiv">
-                                                    <img src="./assets/2.png" alt="" class="card-img">
+                                            <div class="card">
+                                                <div class="card-img"><img src="./assets/fullstacl-web-python.jpg" alt="" class="card-img"></div>
+                                                <div class="card-info">
+                                                    <p class="text-title">Full Stack Web Development using Python in Hindi </p>
+                                                    <p class="text-body">Navin Reddy,Saurabh Shukla</p>
                                                 </div>
-                                                <div class="card-name mt-2">DAS for FAANG with python</div>
-                                                <div class="card-owner py-3">Hitesh Choudhary</div>
-                                                <div class="card-amount">₹4000</div>
+                                                <div class="card-footer">
+                                                    <span class="text-title">₹4000.00</span>
+                                                    <button class="cssbuttons-io-button">
+                                                       
+                                                        <span>Live</span>
+                                                      </button>
+                                                </div>
                                             </div>
                                         </div>
 
                                         <div class="course-cards-div mx-4 p-3">
-                                            <div class="card-top">
-                                                <div class="card-top-imgdiv">
-                                                    <img src="./assets/62dbfcbf8a6db091f84577dd.jpg" alt=""
-                                                        class="card-img">
+                                            <div class="card">
+                                                <div class="card-img"><img src="./assets/blockchain.jpg" alt="" class="card-img"></div>
+                                                <div class="card-info">
+                                                    <p class="text-title">Full Stack Blockchain Development</p>
+                                                    <p class="text-body">Krish Naik, Sanjeevan Thorat, Navin Reddy</p>
                                                 </div>
-                                                <div class="card-name mt-2">Digital Marketing Batch 2 in Hindi</div>
-                                                <div class="card-owner py-3">Hitesh Choudhary</div>
-                                                <div class="card-amount">₹11000</div>
+                                                <div class="card-footer">
+                                                    <span class="text-title">₹4000.00</span>
+                                                    <button class="cssbuttons-io-button">
+                                                       
+                                                        <span>Live</span>
+                                                      </button>
+                                                </div>
                                             </div>
                                         </div>
 
                                         <div class="course-cards-div mx-4 p-3 ">
-                                            <div class="card-top">
-                                                <div class="card-top-imgdiv">
-                                                    <img src="./assets/youtube-mastery.jpg" alt="" class="card-img">
+                                            <div class="card">
+                                                <div class="card-img"><img src="./assets/tester.jpg" alt="" class="card-img"></div>
+                                                <div class="card-info">
+                                                    <p class="text-title">Job Ready Automation Tester with JavaScript </p>
+                                                    <p class="text-body">Mukesh Otwani</p>
                                                 </div>
-                                                <div class="card-name mt-2">Youtube Mastery Batch 2 in Hindi</div>
-                                                <div class="card-owner py-3">Amresh Bharti</div>
-                                                <div class="card-amount">₹4000</div>
+                                                <div class="card-footer">
+                                                    <span class="text-title">₹4000.00</span>
+                                                    <button class="cssbuttons-io-button">
+                                                       
+                                                        <span>Live</span>
+                                                      </button>
+                                                </div>
                                             </div>
                                         </div>
 
-                                        <div class="course-cards-div mx-4 p-3 ">
-                                            <div class="card-top">
-                                                <div class="card-top-imgdiv">
-                                                    <img src="./assets/2.png" alt="" class="card-img">
-                                                </div>
-                                                <div class="card-name mt-2">DAS for FAANG with python</div>
-                                                <div class="card-owner py-3">Hitesh Choudhary</div>
-                                                <div class="card-amount">₹4000</div>
-                                            </div>
-                                        </div>
-                                        <div class="course-cards-div mx-4 p-3 ">
-                                            <div class="card-top">
-                                                <div class="card-top-imgdiv">
-                                                    <img src="./assets/youtube-mastery.jpg" alt="" class="card-img">
-                                                </div>
-                                                <div class="card-name mt-2">Youtube Mastery Batch 2 in Hindi</div>
-                                                <div class="card-owner py-3">Amresh Bharti</div>
-                                                <div class="card-amount">₹4000</div>
-                                            </div>
-                                        </div>
+                                        
+                                        
                                     </div>
 
-                                    <div class="view-more-button d-flex justify-content-center align-items-center py-5">
+                                    <div class="view-more-button d-flex justify-content-center align-items-center py-3">
                                         <button class="view-morebtn">View More</button>
                                     </div>
                                 </div>
@@ -830,7 +912,7 @@
                                 <!--------------------------- Affordabe Program  --------------------------------------->
 
 
-                                <div  class="Affordabe-Program  p-4 " style="display: none;">
+                                <div class="Affordabe-Program  p-4 " style="display: none;">
                                     <h3 class="select-cousre-title">Affordabe Program</h3>
                                     <p>Get your program with live "instructor led" learning. Lorem, ipsum dolor sit amet
                                         consectetur
@@ -839,55 +921,57 @@
                                         aliquid
                                         cum!</p>
 
-                                    <div class="course-card-maindiv d-flex gap-4 ">
-                                        <div class="course-cards-div mx-4 p-3 " id="hoverdiv" style="display:none;">
-                                            <div class="card-top">
-                                                <div class="card-top-imgdiv">
-                                                    <img src="./assets/2.png" alt="" class="card-img"
-                                                        onmouseover="bigImg(e)">
+                                    <div class="course-card-maindiv affordable d-flex gap-4 ">
+                                        
+                                       
+
+                                        <div class="course-cards-div affordable ">
+                                            <div class="card">
+                                                <div class="card-img"><img src="./assets/affordable2.jpg" alt="" class="card-img"></div>
+                                                <div class="card-info">
+                                                    <p class="text-title">Full Stack Data Science BootCamp 2.0 </p>
+                                                    <p class="text-body">Krish Naik</p>
                                                 </div>
-                                                <div class="card-name mt-2">DAS for FAANG with python and Javascript
+                                                <div class="card-footer">
+                                                    <span class="text-title">₹17700.00</span>
+                                                    <button class="cssbuttons-io-button">
+                                                       
+                                                        <span>Live</span>
+                                                      </button>
                                                 </div>
-                                                <div class="card-owner py-3">Hitesh Choudhary</div>
-                                                <div class="card-amount">₹4000</div>
+                                            </div>
+                                        </div>
+                                        <div class="course-cards-div affordable ">
+                                            <div class="card">
+                                                <div class="card-img"><img src="./assets/affordable3.jpg" alt="" class="card-img"></div>
+                                                <div class="card-info">
+                                                    <p class="text-title">Full Stack Data Science BootCamp 2.0 </p>
+                                                    <p class="text-body">Krish Naik</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <span class="text-title">₹17700.00</span>
+                                                    <button class="cssbuttons-io-button">
+                                                       
+                                                        <span>Live</span>
+                                                      </button>
+                                                </div>
                                             </div>
                                         </div>
 
-                                        <!-- <div id="courde-disc" style="display:none;">
-                                    hello
-                                </div> -->
-
-                                        <div class="course-cards-div mx-4 p-3 ">
-                                            <div class="card-top">
-                                                <div class="card-top-imgdiv">
-                                                    <img src="./assets/youtube-mastery.jpg" alt="" class="card-img">
+                                        <div class="course-cards-div affordable   p-3">
+                                            <div class="card">
+                                                <div class="card-img"><img src="./assets/affordable4.jpg" alt="" class="card-img"></div>
+                                                <div class="card-info">
+                                                    <p class="text-title">Full Stack Data Science BootCamp 2.0 </p>
+                                                    <p class="text-body">Krish Naik</p>
                                                 </div>
-                                                <div class="card-name mt-2">Youtube Mastery Batch 2 in Hindi</div>
-                                                <div class="card-owner py-3">Amresh Bharti</div>
-                                                <div class="card-amount">₹4000</div>
-                                            </div>
-                                        </div>
-                                        <div class="course-cards-div mx-4 p-3 ">
-                                            <div class="card-top">
-                                                <div class="card-top-imgdiv">
-                                                    <img src="./assets/62d144bf5af3c72263428ffd.jpg" alt=""
-                                                        class="card-img">
+                                                <div class="card-footer">
+                                                    <span class="text-title">₹17700.00</span>
+                                                    <button class="cssbuttons-io-button">
+                                                       
+                                                        <span>Live</span>
+                                                      </button>
                                                 </div>
-                                                <div class="card-name mt-2">Advance Facebook Marketing Course in Hindi
-                                                </div>
-                                                <div class="card-owner py-3">Hitesh Choudhary</div>
-                                                <div class="card-amount">₹3000</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="course-cards-div mx-4 p-3">
-                                            <div class="card-top">
-                                                <div class="card-top-imgdiv">
-                                                    <img src="./assets/2.png" alt="" class="card-img">
-                                                </div>
-                                                <div class="card-name mt-2">DAS for FAANG with python</div>
-                                                <div class="card-owner py-3">Hitesh Choudhary</div>
-                                                <div class="card-amount">₹4000</div>
                                             </div>
                                         </div>
 
@@ -904,7 +988,7 @@
 
                                 <!--------------------------- Community Program  --------------------------------------->
 
-                                <div  class="Community-Program  p-4 " style="display: none;">
+                                <div class="Community-Program  p-4 " style="display: none;">
                                     <h3 class="select-cousre-title">Commnunity Program</h3>
                                     <p>Get your program with live "instructor led" learning. Lorem, ipsum dolor sit amet
                                         consectetur
@@ -913,55 +997,57 @@
                                         aliquid
                                         cum!</p>
 
-                                    <div class="course-card-maindiv d-flex gap-4 ">
-                                        <div class="course-cards-div mx-4 p-3 " id="hoverdiv" style="display:none;">
-                                            <div class="card-top">
-                                                <div class="card-top-imgdiv">
-                                                    <img src="./assets/2.png" alt="" class="card-img"
-                                                        onmouseover="bigImg(e)">
+                                    <div class="course-card-maindiv affordable d-flex gap-4 ">
+                                        
+>
+
+                                        <div class="course-cards-div affordable  ">
+                                            <div class="card">
+                                                <div class="card-img"><img src="./assets//fulstack-datascience.jpg" alt="" class="card-img"></div>
+                                                <div class="card-info">
+                                                    <p class="text-title">Full Stack Data Science BootCamp 2.0 </p>
+                                                    <p class="text-body">Krish Naik</p>
                                                 </div>
-                                                <div class="card-name mt-2">DAS for FAANG with python and Javascript
+                                                <div class="card-footer">
+                                                    <span class="text-title">₹17700.00</span>
+                                                    <button class="cssbuttons-io-button">
+                                                       
+                                                        <span>Live</span>
+                                                      </button>
                                                 </div>
-                                                <div class="card-owner py-3">Hitesh Choudhary</div>
-                                                <div class="card-amount">₹4000</div>
+                                            </div>
+                                        </div>
+                                        <div class="course-cards-div affordable   ">
+                                            <div class="card">
+                                                <div class="card-img"><img src="./assets//fulstack-datascience.jpg" alt="" class="card-img"></div>
+                                                <div class="card-info">
+                                                    <p class="text-title">Full Stack Data Science BootCamp 2.0 </p>
+                                                    <p class="text-body">Krish Naik</p>
+                                                </div>
+                                                <div class="card-footer">
+                                                    <span class="text-title">₹17700.00</span>
+                                                    <button class="cssbuttons-io-button">
+                                                       
+                                                        <span>Live</span>
+                                                      </button>
+                                                </div>
                                             </div>
                                         </div>
 
-                                        <!-- <div id="courde-disc" style="display:none;">
-                            hello
-                        </div> -->
-
-                                        <div class="course-cards-div mx-4 p-3 ">
-                                            <div class="card-top">
-                                                <div class="card-top-imgdiv">
-                                                    <img src="./assets/youtube-mastery.jpg" alt="" class="card-img">
+                                        <div class="course-cards-div affordable  ">
+                                            <div class="card">
+                                                <div class="card-img"><img src="./assets//fulstack-datascience.jpg" alt="" class="card-img"></div>
+                                                <div class="card-info">
+                                                    <p class="text-title">Full Stack Data Science BootCamp 2.0 </p>
+                                                    <p class="text-body">Krish Naik</p>
                                                 </div>
-                                                <div class="card-name mt-2">Youtube Mastery Batch 2 in Hindi</div>
-                                                <div class="card-owner py-3">Amresh Bharti</div>
-                                                <div class="card-amount">₹4000</div>
-                                            </div>
-                                        </div>
-                                        <div class="course-cards-div mx-4 p-3 ">
-                                            <div class="card-top">
-                                                <div class="card-top-imgdiv">
-                                                    <img src="./assets/62d144bf5af3c72263428ffd.jpg" alt=""
-                                                        class="card-img">
+                                                <div class="card-footer">
+                                                    <span class="text-title">₹17700.00</span>
+                                                    <button class="cssbuttons-io-button">
+                                                       
+                                                        <span>Live</span>
+                                                      </button>
                                                 </div>
-                                                <div class="card-name mt-2">Advance Facebook Marketing Course in Hindi
-                                                </div>
-                                                <div class="card-owner py-3">Hitesh Choudhary</div>
-                                                <div class="card-amount">₹3000</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="course-cards-div mx-4 p-3">
-                                            <div class="card-top">
-                                                <div class="card-top-imgdiv">
-                                                    <img src="./assets/2.png" alt="" class="card-img">
-                                                </div>
-                                                <div class="card-name mt-2">DAS for FAANG with python</div>
-                                                <div class="card-owner py-3">Hitesh Choudhary</div>
-                                                <div class="card-amount">₹4000</div>
                                             </div>
                                         </div>
 
@@ -977,7 +1063,7 @@
 
                                 <!--------------------------- One Neuron--------------------------------------->
 
-                                <div  class="One-Neuron  p-4 " style="display: none;">
+                                <div class="One-Neuron  p-4 " style="display: none;">
                                     <h3 class="select-cousre-title">One Neuron</h3>
                                     <p>Get your program with live "instructor led" learning. Lorem, ipsum dolor sit amet
                                         consectetur
@@ -987,16 +1073,20 @@
                                         cum!</p>
 
                                     <div class="course-card-maindiv d-flex gap-4 ">
-                                        <div class="course-cards-div mx-4 p-3 " id="hoverdiv" style="display:none;">
-                                            <div class="card-top">
-                                                <div class="card-top-imgdiv">
-                                                    <img src="./assets/2.png" alt="" class="card-img"
-                                                        onmouseover="bigImg(e)">
+                                        <div class="course-cards-div affordable " id="hoverdiv" style="display:none;">
+                                            <div class="card">
+                                                <div class="card-img"><img src="./assets//fulstack-datascience.jpg" alt="" class="card-img"></div>
+                                                <div class="card-info">
+                                                    <p class="text-title">Full Stack Data Science BootCamp 2.0 </p>
+                                                    <p class="text-body">Krish Naik</p>
                                                 </div>
-                                                <div class="card-name mt-2">DAS for FAANG with python and Javascript
+                                                <div class="card-footer">
+                                                    <span class="text-title">₹17700.00</span>
+                                                    <button class="cssbuttons-io-button">
+                                                       
+                                                        <span>Live</span>
+                                                      </button>
                                                 </div>
-                                                <div class="card-owner py-3">Hitesh Choudhary</div>
-                                                <div class="card-amount">₹4000</div>
                                             </div>
                                         </div>
 
@@ -1004,37 +1094,53 @@
                             hello
                         </div> -->
 
-                                        <div class="course-cards-div mx-4 p-3 ">
-                                            <div class="card-top">
-                                                <div class="card-top-imgdiv">
-                                                    <img src="./assets/youtube-mastery.jpg" alt="" class="card-img">
+                                        <div class="course-cards-div affordable  ">
+                                            <div class="card">
+                                                <div class="card-img"><img src="./assets//fulstack-datascience.jpg" alt="" class="card-img"></div>
+                                                <div class="card-info">
+                                                    <p class="text-title">Full Stack Data Science BootCamp 2.0 </p>
+                                                    <p class="text-body">Krish Naik</p>
                                                 </div>
-                                                <div class="card-name mt-2">Youtube Mastery Batch 2 in Hindi</div>
-                                                <div class="card-owner py-3">Amresh Bharti</div>
-                                                <div class="card-amount">₹4000</div>
+                                                <div class="card-footer">
+                                                    <span class="text-title">₹17700.00</span>
+                                                    <button class="cssbuttons-io-button">
+                                                       
+                                                        <span>Live</span>
+                                                      </button>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="course-cards-div mx-4 p-3 ">
-                                            <div class="card-top">
-                                                <div class="card-top-imgdiv">
-                                                    <img src="./assets/62d144bf5af3c72263428ffd.jpg" alt=""
-                                                        class="card-img">
+                                        <div class="course-cards-div affordable  ">
+                                            <div class="card">
+                                                <div class="card-img"><img src="./assets//fulstack-datascience.jpg" alt="" class="card-img"></div>
+                                                <div class="card-info">
+                                                    <p class="text-title">Full Stack Data Science BootCamp 2.0 </p>
+                                                    <p class="text-body">Krish Naik</p>
                                                 </div>
-                                                <div class="card-name mt-2">Advance Facebook Marketing Course in Hindi
+                                                <div class="card-footer">
+                                                    <span class="text-title">₹17700.00</span>
+                                                    <button class="cssbuttons-io-button">
+                                                       
+                                                        <span>Live</span>
+                                                      </button>
                                                 </div>
-                                                <div class="card-owner py-3">Hitesh Choudhary</div>
-                                                <div class="card-amount">₹3000</div>
                                             </div>
                                         </div>
 
-                                        <div class="course-cards-div mx-4 p-3">
-                                            <div class="card-top">
-                                                <div class="card-top-imgdiv">
-                                                    <img src="./assets/2.png" alt="" class="card-img">
+                                        <div class="course-cards-div affordable ">
+                                            <div class="card">
+                                                <div class="card-img"><img src="./assets//fulstack-datascience.jpg" alt="" class="card-img"></div>
+                                                <div class="card-info">
+                                                    <p class="text-title">Full Stack Data Science BootCamp 2.0 </p>
+                                                    <p class="text-body">Krish Naik</p>
                                                 </div>
-                                                <div class="card-name mt-2">DAS for FAANG with python</div>
-                                                <div class="card-owner py-3">Hitesh Choudhary</div>
-                                                <div class="card-amount">₹4000</div>
+                                                <div class="card-footer">
+                                                    <span class="text-title">₹17700.00</span>
+                                                    <button class="cssbuttons-io-button">
+                                                       
+                                                        <span>Live</span>
+                                                      </button>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -1050,7 +1156,7 @@
 
                                 <!--------------------------- Text Series-------------------------------------->
 
-                                <div  class="Text-Series  p-4 " style="display: none;">
+                                <div class="Text-Series  p-4 " style="display: none;">
                                     <h3 class="select-cousre-title">Text Series</h3>
                                     <p>Get your program with live "instructor led" learning. Lorem, ipsum dolor sit amet
                                         consectetur
@@ -1060,16 +1166,20 @@
                                         cum!</p>
 
                                     <div class="course-card-maindiv d-flex gap-4 ">
-                                        <div class="course-cards-div mx-4 p-3 " id="hoverdiv" style="display:none;">
-                                            <div class="card-top">
-                                                <div class="card-top-imgdiv">
-                                                    <img src="./assets/2.png" alt="" class="card-img"
-                                                        onmouseover="bigImg(e)">
+                                        <div class="course-cards-div  " id="hoverdiv" style="display:none;">
+                                            <div class="card">
+                                                <div class="card-img"><img src="./assets//fulstack-datascience.jpg" alt="" class="card-img"></div>
+                                                <div class="card-info">
+                                                    <p class="text-title">Full Stack Data Science BootCamp 2.0 </p>
+                                                    <p class="text-body">Krish Naik</p>
                                                 </div>
-                                                <div class="card-name mt-2">DAS for FAANG with python and Javascript
+                                                <div class="card-footer">
+                                                    <span class="text-title">₹17700.00</span>
+                                                    <button class="cssbuttons-io-button">
+                                                       
+                                                        <span>Live</span>
+                                                      </button>
                                                 </div>
-                                                <div class="card-owner py-3">Hitesh Choudhary</div>
-                                                <div class="card-amount">₹4000</div>
                                             </div>
                                         </div>
 
@@ -1077,37 +1187,53 @@
                             hello
                         </div> -->
 
-                                        <div class="course-cards-div mx-4 p-3 ">
-                                            <div class="card-top">
-                                                <div class="card-top-imgdiv">
-                                                    <img src="./assets/youtube-mastery.jpg" alt="" class="card-img">
+                                        <div class="course-cards-div  ">
+                                            <div class="card">
+                                                <div class="card-img"><img src="./assets//fulstack-datascience.jpg" alt="" class="card-img"></div>
+                                                <div class="card-info">
+                                                    <p class="text-title">Full Stack Data Science BootCamp 2.0 </p>
+                                                    <p class="text-body">Krish Naik</p>
                                                 </div>
-                                                <div class="card-name mt-2">Youtube Mastery Batch 2 in Hindi</div>
-                                                <div class="card-owner py-3">Amresh Bharti</div>
-                                                <div class="card-amount">₹4000</div>
+                                                <div class="card-footer">
+                                                    <span class="text-title">₹17700.00</span>
+                                                    <button class="cssbuttons-io-button">
+                                                       
+                                                        <span>Live</span>
+                                                      </button>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="course-cards-div mx-4 p-3 ">
-                                            <div class="card-top">
-                                                <div class="card-top-imgdiv">
-                                                    <img src="./assets/62d144bf5af3c72263428ffd.jpg" alt=""
-                                                        class="card-img">
+                                        <div class="course-cards-div  ">
+                                            <div class="card">
+                                                <div class="card-img"><img src="./assets//fulstack-datascience.jpg" alt="" class="card-img"></div>
+                                                <div class="card-info">
+                                                    <p class="text-title">Full Stack Data Science BootCamp 2.0 </p>
+                                                    <p class="text-body">Krish Naik</p>
                                                 </div>
-                                                <div class="card-name mt-2">Advance Facebook Marketing Course in Hindi
+                                                <div class="card-footer">
+                                                    <span class="text-title">₹17700.00</span>
+                                                    <button class="cssbuttons-io-button">
+                                                       
+                                                        <span>Live</span>
+                                                      </button>
                                                 </div>
-                                                <div class="card-owner py-3">Hitesh Choudhary</div>
-                                                <div class="card-amount">₹3000</div>
                                             </div>
                                         </div>
 
-                                        <div class="course-cards-div mx-4 p-3">
-                                            <div class="card-top">
-                                                <div class="card-top-imgdiv">
-                                                    <img src="./assets/2.png" alt="" class="card-img">
+                                        <div class="course-cards-div ">
+                                            <div class="card">
+                                                <div class="card-img"><img src="./assets//fulstack-datascience.jpg" alt="" class="card-img"></div>
+                                                <div class="card-info">
+                                                    <p class="text-title">Full Stack Data Science BootCamp 2.0 </p>
+                                                    <p class="text-body">Krish Naik</p>
                                                 </div>
-                                                <div class="card-name mt-2">DAS for FAANG with python</div>
-                                                <div class="card-owner py-3">Hitesh Choudhary</div>
-                                                <div class="card-amount">₹4000</div>
+                                                <div class="card-footer">
+                                                    <span class="text-title">₹17700.00</span>
+                                                    <button class="cssbuttons-io-button">
+                                                       
+                                                        <span>Live</span>
+                                                      </button>
+                                                </div>
                                             </div>
                                         </div>
 
@@ -1253,22 +1379,107 @@
 
 
 
-            <div class="header-cards-div  " data-aos="fade-down" data-aos-duration="2000" >
+
+
+            <!---------------------------- our tech avengers  --------------->
+
+
+            <div class="full-width our-product-section">
+                <div class="container">
+                    <div class="row">
+
+                        <h2 class="text-center course-primary-div text-white">Our Products</h2>
+
+
+                        <div class="our-product-div d-flex justify-content-center    align-items-center gap-4 mt-4">
+                            <div class="col-md-3 col-12  mx-3">
+                                <div class="our-products-divone ">
+                                    <div class="producrs-img-div">
+                                        <img src="https://ineuron.ai/images/landing-page/products/jobPortal-icon.svg"
+                                            style="width:150px;" alt="" class="produt-item-img">
+                                    </div>
+                                    <div class="product-item-title">Job Portal</div>
+                                    <div class="product-item-disc">Use Exceptinal Templates for a stand-out resumes
+                                        minus the sign
+                                        up process</div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-md-3 col-12  mx-3">
+                                <div class="our-products-divone ">
+                                    <div class="producrs-img-div">
+                                        <img src="https://ineuron.ai/images/landing-page/products/jobPortal-icon.svg"
+                                            style="width:150px;" alt="" class="produt-item-img">
+                                    </div>
+                                    <div class="product-item-title">Internship Portal</div>
+                                    <div class="product-item-disc">iNeuron's self-paced internship portal prioritises
+                                        hands-on training with 570+ internship projects.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-12  mx-3">
+                                <div class="our-products-divone ">
+                                    <div class="producrs-img-div">
+                                        <img src="https://ineuron.ai/images/landing-page/products/jobPortal-icon.svg"
+                                            style="width:150px;" alt="" class="produt-item-img">
+                                    </div>
+                                    <div class="product-item-title">Become an affilate</div>
+                                    <div class="product-item-disc">Use Exceptinal Templates for a stand-out resumes
+                                        minus the sign
+                                        up process</div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-12  mx-3">
+                                <div class="our-products-divone ">
+                                    <div class="producrs-img-div">
+                                        <img src="https://ineuron.ai/images/landing-page/products/jobPortal-icon.svg"
+                                            style="width:150px;" alt="" class="produt-item-img">
+                                    </div>
+                                    <div class="product-item-title">Hall of fame</div>
+                                    <div class="product-item-disc">Our student placements and 10+ career transitions
+                                        speak volumes about our courses.</div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3 col-12  mx-3">
+                                <div class="our-products-divone ">
+                                    <div class="producrs-img-div">
+                                        <img src="https://ineuron.ai/images/landing-page/products/jobPortal-icon.svg"
+                                            style="width:150px;" alt="" class="produt-item-img">
+                                    </div>
+                                    <div class="product-item-title">InBlog</div>
+                                    <div class="product-item-disc">Explore all you want about your favourite courses.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!------------------------------------------------ all courses section start  ------------------------------>
+
+
+
+
+
+            <div class="header-cards-div  " data-aos="fade-down" data-aos-duration="2000">
                 <div class="container">
                     <div class="row">
                         <h2 class="text-center course-primary-div ">“Pure Hardwork, No Shortcuts!”</h2>
 
                         <div
-                            class="headercard-wrapper flex-wrap d-flex justify-content-around align-items-center  py-3">
+                            class="headercard-wrapper flex-wrap d-flex justify-content-around align-items-center  py-5">
                             <div class="header-cards  ">
                                 <div
                                     class="header-card-wrapper d-flex flex-column justify-content-center align-items-center text-center">
-                                    <!-- <div class="head-card-imgdiv">
-                                <img src="./assets/books-icon.svg" style="width:70px;" alt="">
-                            </div> -->
+                                    <div class="head-card-imgdiv">
+                                        <img src="./assets/data-science.png" style="width:70px;" alt="">
+                                    </div>
                                     <div class="head-card-name bg-white">
                                         <div>
-                                            <span> 400+</span> <br> Different Courses
+                                            <span class="counter"> 400+</span> <br> Different Courses
                                         </div>
                                     </div>
                                 </div>
@@ -1276,12 +1487,12 @@
                             <div class="header-cards  p-3 ">
                                 <div
                                     class="header-card-wrapper d-flex flex-column justify-content-center align-items-center text-center">
-                                    <!-- <div class="head-card-imgdiv">
-                                <img src="./assets/student-iocn.svg" style="width:70px;" alt="">
-                            </div> -->
+                                    <div class="head-card-imgdiv">
+                                        <img src="./assets/training.png" style="width:70px;" alt="">
+                                    </div>
                                     <div class="head-card-name bg-white">
                                         <div>
-                                            <span> 400000+</span> <br> Students Enrolled
+                                            <span class="counter"> 400000+</span> <br> Students Enrolled
                                         </div>
                                     </div>
                                 </div>
@@ -1289,12 +1500,12 @@
                             <div class="header-cards  p-3 ">
                                 <div
                                     class="header-card-wrapper d-flex flex-column justify-content-center align-items-center text-center">
-                                    <!-- <div class="head-card-imgdiv">
-                                <img src="./assets/credit-card-icon.svg" style="width:70px;" alt="">
-                            </div> -->
+                                    <div class="head-card-imgdiv">
+                                        <img src="./assets/career-path.png" style="width:70px;" alt="">
+                                    </div>
                                     <div class="head-card-name bg-white ">
                                         <div>
-                                            <span> 10000+</span> <br> Successful Transition
+                                            <span class="counter"> 10000+</span> <br> Successful Transition
                                         </div>
                                     </div>
                                 </div>
@@ -1303,88 +1514,13 @@
                     </div>
                 </div>
             </div>
-
-            <!---------------------------- our tech avengers  --------------->
-
-
-             <!-- <div class="full-width our-product-section" data-aos="fade-up" data-aos-duration="2000">
-        <div class="container">
-            <div class="row">
-
-                <h2 class="text-center course-primary-div text-white">Our Products</h2>
-
-
-                <div class="our-product-div d-flex justify-content-center   align-items-center gap-4 mt-4">
-                    <div class="col-md-4 col-12  mx-3">
-                        <div class="our-products-divone ">
-                            <div class="producrs-img-div">
-                                <img src="https://ineuron.ai/images/landing-page/products/jobPortal-icon.svg"
-                                    style="width:150px;" alt="" class="produt-item-img">
-                            </div>
-                            <div class="product-item-title">Job Portal</div>
-                            <div class="product-item-disc">Use Exceptinal Templates for a stand-out resumes minus the sign
-                                up process</div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-4 col-12  mx-3">
-                        <div class="our-products-divone ">
-                            <div class="producrs-img-div">
-                                <img src="https://ineuron.ai/images/landing-page/products/jobPortal-icon.svg"
-                                    style="width:150px;" alt="" class="produt-item-img">
-                            </div>
-                            <div class="product-item-title">Job Portal</div>
-                            <div class="product-item-disc">Use Exceptinal Templates for a stand-out resumes minus the sign
-                                up process</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-12  mx-3">
-                        <div class="our-products-divone ">
-                            <div class="producrs-img-div">
-                                <img src="https://ineuron.ai/images/landing-page/products/jobPortal-icon.svg"
-                                    style="width:150px;" alt="" class="produt-item-img">
-                            </div>
-                            <div class="product-item-title">Job Portal</div>
-                            <div class="product-item-disc">Use Exceptinal Templates for a stand-out resumes minus the sign
-                                up process</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-12  mx-3">
-                        <div class="our-products-divone ">
-                            <div class="producrs-img-div">
-                                <img src="https://ineuron.ai/images/landing-page/products/jobPortal-icon.svg"
-                                    style="width:150px;" alt="" class="produt-item-img">
-                            </div>
-                            <div class="product-item-title">Job Portal</div>
-                            <div class="product-item-disc">Use Exceptinal Templates for a stand-out resumes minus the sign
-                                up process</div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-12  mx-3">
-                        <div class="our-products-divone ">
-                            <div class="producrs-img-div">
-                                <img src="https://ineuron.ai/images/landing-page/products/jobPortal-icon.svg"
-                                    style="width:150px;" alt="" class="produt-item-img">
-                            </div>
-                            <div class="product-item-title">Job Portal</div>
-                            <div class="product-item-disc">Use Exceptinal Templates for a stand-out resumes minus the sign
-                                up process</div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>   -->
-
-            <!------------------------------------------------ all courses section start  ------------------------------>
 
 
 
             <!-------------------------------------------- hall of fame  start ------------------------------>
 
 
-            <div class="full-width " >
+            <div class="full-width ">
                 <div class="container">
                     <div class="row">
 
@@ -1549,7 +1685,7 @@
 
 
             <!--------------------------------------------- placement companies  ---------------------------------------->
-            <div class="full-width" >
+            <div class="full-width">
                 <div class="container">
                     <div class="row">
 
@@ -1793,11 +1929,26 @@
 
 
 
+            <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+            <script src="jquery.counterup.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+                integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"
+                integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g=="
+                crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
             <script>
-                AOS.init();
+
+                $('.counter').counterUp({
+                    delay: 10,
+                    time: 1000
+                });
             </script>
+
+
+
 
             <script src="https://code.jquery.com/jquery-3.6.0.min.js"
                 integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -1814,7 +1965,6 @@
 
             <script src="https://kit.fontawesome.com/cb9a997e82.js" crossorigin="anonymous"></script>
 
-            
 
 
 
@@ -1867,7 +2017,7 @@
 
             </script>
 
-            
+
 
             <script>
                 var divs = ["Div0", "Div1", "Div2", "Div3", "Div4", "Div5"];
@@ -1948,33 +2098,33 @@
             <script>
 
 
-$(document).ready(function(){
-    $('.tech-avengers-div').slick({
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      prevArrow: '<button class="slide-arrow prev-arrow"></button>',
-    nextArrow: '<button class="slide-arrow next-arrow"></button>',
-      dots: false,
-      speed: 300,
-      infinite: true,
-      autoplaySpeed: 5000,
-      autoplay: true,
-      responsive: [
-    {
-      breakpoint: 991,
-      settings: {
-        slidesToShow: 3,
-      }
-    },
-    {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 1,
-      }
-    }
-  ]
-    });
-  });
+                $(document).ready(function () {
+                    $('.tech-avengers-div').slick({
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        prevArrow: '<button class="slide-arrow prev-arrow"></button>',
+                        nextArrow: '<button class="slide-arrow next-arrow"></button>',
+                        dots: false,
+                        speed: 300,
+                        infinite: true,
+                        autoplaySpeed: 5000,
+                        autoplay: true,
+                        responsive: [
+                            {
+                                breakpoint: 991,
+                                settings: {
+                                    slidesToShow: 3,
+                                }
+                            },
+                            {
+                                breakpoint: 767,
+                                settings: {
+                                    slidesToShow: 1,
+                                }
+                            }
+                        ]
+                    });
+                });
 
                 // $(document).on('.dropdown', '.keep-open', function (e) {
                 //     e.stopPropagation();
@@ -2004,42 +2154,42 @@ $(document).ready(function(){
                 //     });
                 // });
 
-                $('.our-product-div').slick({
-                    infinite: true,
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    arrows: false,
-                    autoplay: true,
-                    responsive: [
+                // $('.our-product-div').slick({
+                //     infinite: true,
+                //     slidesToShow: 3,
+                //     slidesToScroll: 1,
+                //     arrows: false,
+                //     autoplay: true,
+                //     responsive: [
 
-                        {
-                            breakpoint: 1024,
-                            settings: {
-                                slidesToShow: 3,
-                                slidesToScroll: 1,
-                                infinite: true,
-                                dots: true
-                            }
-                        },
-                        {
-                            breakpoint: 600,
-                            settings: {
-                                slidesToShow: 2,
-                                slidesToScroll: 1
-                            }
-                        },
-                        {
-                            breakpoint: 480,
-                            settings: {
-                                slidesToShow: 1,
-                                slidesToScroll: 1
-                            }
-                        }
-                        // You can unslick at a given breakpoint now by adding:
-                        // settings: "unslick"
-                        // instead of a settings object
-                    ]
-                });
+                //         {
+                //             breakpoint: 1024,
+                //             settings: {
+                //                 slidesToShow: 3,
+                //                 slidesToScroll: 1,
+                //                 infinite: true,
+                //                 dots: true
+                //             }
+                //         },
+                //         {
+                //             breakpoint: 600,
+                //             settings: {
+                //                 slidesToShow: 2,
+                //                 slidesToScroll: 1
+                //             }
+                //         },
+                //         {
+                //             breakpoint: 480,
+                //             settings: {
+                //                 slidesToShow: 1,
+                //                 slidesToScroll: 1
+                //             }
+                //         }
+                //         // You can unslick at a given breakpoint now by adding:
+                //         // settings: "unslick"
+                //         // instead of a settings object
+                //     ]
+                // });
 
 
 

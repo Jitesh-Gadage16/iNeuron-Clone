@@ -337,9 +337,14 @@ span#basic-addon1 {
 .header-cards-div {
   bottom: 0px;
 }
+.header-cards:hover{
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 16%), 0 0 0 1px rgb(0 0 0 / 8%);
+    transition: box-shadow .2s cubic-bezier(.4,0,.2,1);
+    border-radius: 10px;
+}
 
 .course-primary-div {
-  font-size: 60px;
+  font-size: 40px;
   text-transform: capitalize;
   font-weight: 700;
   color: #233c7b;
@@ -366,8 +371,7 @@ span#basic-addon1 {
   border-radius: 10px;
   width: 300px;
 }
-
-.head-card-name div {
+.header-card-wrapper {
   font-size: 20px;
   font-weight: 500;
   text-transform: capitalize;
@@ -382,7 +386,7 @@ span#basic-addon1 {
 .head-card-name div span {
   font-size: 40px;
   font-weight: 700;
-  color: #387ca2;
+  color: #233c7b;
 }
 
 .data-scince-courses {
@@ -402,7 +406,7 @@ span#basic-addon1 {
 .course-cards-div {
   /* width: 300px; */
   /* background: red; */
-  border: 1px solid lightgray;
+  /* border: 1px solid lightgray; */
   height: inherit;
 }
 
@@ -460,13 +464,17 @@ button.enroll-now {
   font-weight: 500;
   text-transform: uppercase;
 }
-.banner-heading-div span,
-.bbaner-bottom-heading span {
+.banner-heading-div span {
   /* color: #387ca2; */
-  color: #233c7b;
+  /* color: #233c7b; */
+  color: #fff;
   /* background: -webkit-linear-gradient(#CB4747, #B0249A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
+}
+
+.bbaner-bottom-heading span{
+  color: #233c7b;
 }
 
 .mob-banner-div {
@@ -511,6 +519,9 @@ h1.bbaner-bottom-heading {
 }
 .courses-tabs-wrapper {
   overflow: auto;
+}
+.courses-tabs-wrapper::-webkit-scrollbar{
+    display: none;
 }
 
 .footer {
@@ -568,6 +579,10 @@ img.company-img {
   width: 200px;
 }
 
+img.company-img:hover{
+  transform: scale(1.05);
+}
+
 .achiver-foteer {
   position: absolute;
   bottom: 0;
@@ -577,6 +592,7 @@ img.company-img {
   padding: 20px;
   text-align: center;
   width: 350px;
+  height:250px;
   box-shadow: 0px 0px 2.2px rgb(0 0 0 / 2%), 0px 0px 5.3px rgb(0 0 0 / 3%),
     0px 0px 10px rgb(0 0 0 / 4%), 0px 0px 17.9px rgb(0 0 0 / 4%),
     0px 0px 33.4px rgb(0 0 0 / 5%), 0px 0px 80px rgb(0 0 0 / 7%);
@@ -599,7 +615,7 @@ img.company-img {
 .our-product-section {
   background-image: url(../assets/step-postjob-bg.svg);
   background-size: 100% 100%;
-  height: 500px;
+  height: inherit;
 }
 
 .weaccept-text {
@@ -630,7 +646,22 @@ img.company-img {
   background: #fff;
 }
 
+.our-product-div {
+  padding: 30px 0!important;
+  flex-wrap: wrap;
+}
 @media (max-width: 770px) {
+
+  .all-company-div{
+    height: 380px;
+  }
+
+  .course-cards-div.affordable {
+    width: 343px;
+}
+.course-card-maindiv.course-card-maindiv{
+  overflow: auto;
+}
   .mobile {
     display: block !important;
   }
@@ -645,10 +676,15 @@ img.company-img {
     width: 80px !important;
   }
 
-  /* .our-product-div {
+  .our-product-div {
     overflow: auto;
-    justify-content: space-between !important;
-  } */
+    flex-wrap: nowrap;
+
+  }
+
+  .our-products-divone {
+    margin:0 auto
+  }
   .weaccept-text{
     font-size: 15px!important;
   }
@@ -782,6 +818,18 @@ img.company-img {
   width: 300px;
 }
 
+.all-portals {
+  position: absolute;
+  top: 75px;
+  right: 20px;
+  width: 180px;
+}
+
+.mycourse-one a {
+  text-decoration: none;
+  color: #000;
+}
+
 .course-namediv {
   font-weight: 500;
   color: #000;
@@ -853,7 +901,7 @@ button{
   margin-top: -15px;
 }
 .prev-arrow{
-  left: -40px;
+  left: 0px;
   width: 0;
   height: 0;
   border-left: 0 solid transparent;
@@ -862,7 +910,7 @@ button{
   border-bottom: 10px solid transparent;
 }
 .next-arrow{
-  right: -40px;
+  right: 0px;
   width: 0;
   height: 0;
   border-right: 0 solid transparent;
@@ -882,4 +930,340 @@ button{
 }
 
 
+.headr-bg {
+  background-image: url(https://cdn.playerzpot.com/images/landing-bgNew.webp);
+  height: 500px;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: 100% 100%;
+  margin: 0;
+  top: 0;
+  opacity: 0.1;
+  position: absolute;
+  left: 0;
+}
 
+.headr-bg::before {
+  content: "";
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}
+
+
+
+/* From uiverse.io */
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+ }
+ 
+ button.learn-more {
+  width: 12rem;
+  height: auto;
+ }
+ 
+ button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+ }
+ 
+ button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+ }
+ 
+ button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+ }
+ 
+ button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+ }
+ 
+ button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+ }
+ 
+ button:hover .circle {
+  width: 100%;
+ }
+ 
+ button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+ }
+ 
+ button:hover .button-text {
+  color: #fff;
+ }
+
+/* From uiverse.io */
+.fancy {
+  background-color: transparent;
+  border: 2px solid #000;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 1.25em 2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  font-size: 13px;
+ }
+ 
+ .fancy::before {
+  content: " ";
+  width: 1.5625rem;
+  height: 2px;
+  background: black;
+  top: 50%;
+  left: 1.5em;
+  position: absolute;
+  transform: translateY(-50%);
+  transform-origin: center;
+  transition: background 0.3s linear, width 0.3s linear;
+ }
+ 
+ .fancy .text {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  padding-left: 2em;
+  display: block;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+ }
+ 
+ .fancy .top-key {
+  height: 2px;
+  width: 1.5625rem;
+  top: -2px;
+  left: 0.625rem;
+  position: absolute;
+  background: #e8e8e8;
+  transition: width 0.5s ease-out, left 0.3s ease-out;
+ }
+ 
+ .fancy .bottom-key-1 {
+  height: 2px;
+  width: 1.5625rem;
+  right: 1.875rem;
+  bottom: -2px;
+  position: absolute;
+  background: #e8e8e8;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+ }
+ 
+ .fancy .bottom-key-2 {
+  height: 2px;
+  width: 0.625rem;
+  right: 0.625rem;
+  bottom: -2px;
+  position: absolute;
+  background: #e8e8e8;
+  transition: width 0.5s ease-out, right 0.3s ease-out;
+ }
+ 
+ .fancy:hover {
+  color: white;
+  background: black;
+ }
+ 
+ .fancy:hover::before {
+  width: 0.9375rem;
+  background: white;
+ }
+ 
+ .fancy:hover .text {
+  color: white;
+  padding-left: 1.5em;
+ }
+ 
+ .fancy:hover .top-key {
+  left: -2px;
+  width: 0px;
+ }
+ 
+ .fancy:hover .bottom-key-1,
+  .fancy:hover .bottom-key-2 {
+  right: 0;
+  width: 0;
+ }
+
+
+
+
+
+
+
+
+
+ /* dndbv  */
+
+
+ /* From uiverse.io by @alexruix */
+.card {
+  /* width: 190px; */
+  height: 254px;
+  padding: .8em;
+  background: #f5f5f5;
+  position: relative;
+  overflow: visible;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+ }
+ 
+ .card-img {
+  /* background-color: #ffcaa6; */
+  height: 40%;
+  width: 100%;
+  border-radius: .5rem;
+  transition: .3s ease;
+ }
+ 
+ .card-info {
+  padding-top: 10%;
+ }
+ 
+ svg {
+  width: 20px;
+  height: 20px;
+ }
+ 
+ .card-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+ }
+ 
+ /*Text*/
+ .text-title {
+  font-weight: 900;
+  font-size: 1.2em;
+  line-height: 1.5;
+ }
+ 
+ .text-body {
+  font-size: .9em;
+  padding-bottom: 10px;
+ }
+ 
+ /*Button*/
+ .card-button {
+  border: 1px solid #252525;
+  display: flex;
+  padding: .3em;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: .3s ease-in-out;
+ }
+ 
+ /*Hover*/
+ .card-img:hover {
+  /* transform: translateY(-25%); */
+  /* box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px; */
+ }
+ 
+ .card-button:hover {
+  border: 1px solid #ffcaa6;
+  background-color: #ffcaa6;
+ }
+
+
+
+
+ /* From uiverse.io by @adamgiebl */
+.cssbuttons-io-button {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 10px;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(0deg, rgba(77,54,208,1) 0%, rgba(132,116,254,1) 100%);
+  border: none;
+  box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
+  letter-spacing: 0.05em;
+  border-radius: 20em;
+ }
+
+ p.text-title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+ 
+ .cssbuttons-io-button svg {
+  margin-right: 8px;
+ }
+ 
+ .cssbuttons-io-button:hover {
+  box-shadow: 0 0.5em 1.5em -0.5em #4d36d0be;
+ }
+ 
+ .cssbuttons-io-button:active {
+  box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
+ }
+ 
