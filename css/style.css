@@ -166,10 +166,11 @@
   top: 50px;
 }
 
-.sec-menu-devops{
+.sec-menu-devops {
   position: absolute;
-  right: 10px;
-  top: 50px;
+  right: 0;
+  top: 126px;
+  WIDTH: 100%;
 }
 
 
@@ -178,7 +179,7 @@
   color: #fff;
 } 
 
-.courses-div:hover::after{
+/* .courses-div:hover::after{
   content: '';
   border-left: 0.8rem solid transparent;
   border-right: 0.8rem solid transparent;
@@ -189,7 +190,7 @@
   left: 50%;
   transform: translateX(-50%);
 
-  }
+  } */
 
 .flex-1 {
   flex: 1 0 0;
@@ -653,6 +654,10 @@ img.company-img:hover{
 .our-product-div {
   padding: 30px 0!important;
   flex-wrap: wrap;
+}
+
+.dropdown-item:hover {
+  color: #000!important;
 }
 @media (max-width: 770px) {
 
@@ -1274,4 +1279,17 @@ button {
  .cssbuttons-io-button:active {
   box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
  }
+
+
+ .dropdown-menu.sec-menu {
+  position: absolute;
+  width: 100;
+  width: 100%;
+  left: 0;
+  top: 127px;
+}
+
+.courses-div.d-flex.dropdown {
+  position:static;
+}
  
