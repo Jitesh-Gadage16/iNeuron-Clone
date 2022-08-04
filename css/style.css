@@ -541,6 +541,10 @@ a.nav-link.p-0.text-white span {
   margin-right: 10px;
 }
 
+.Live-Program,.Affordabe-Program,.Community-Program,.One-Neuron,.Text-Series  {
+  padding: 10px 20px;
+}
+
 .all-company-div {
   -webkit-box-shadow: rgb(19 46 112 / 10%) 0 1rem 4rem 0;
   box-shadow: rgb(19 46 112 / 10%) 0 1rem 4rem 0;
@@ -651,6 +655,10 @@ img.company-img:hover{
   flex-wrap: wrap;
 }
 @media (max-width: 770px) {
+
+  .Live-Program,.Affordabe-Program,.Community-Program,.One-Neuron,.Text-Series  {
+    padding: 10px 8px;
+  }
 
   .all-company-div{
     height: 380px;
