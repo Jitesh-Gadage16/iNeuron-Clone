@@ -671,7 +671,7 @@ img.company-img:hover{
   }
 
   .course-cards-div.affordable {
-    width: 343px;
+    width: 343px!important;
 }
 .course-card-maindiv.course-card-maindiv{
   overflow: auto;
@@ -1292,5 +1292,9 @@ button {
 
 .courses-div.d-flex.dropdown {
   position:static;
+}
+
+.course-cards-div.affordable {
+  width: 420px;
 }
  
