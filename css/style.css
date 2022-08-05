@@ -222,6 +222,7 @@ span#basic-addon1 {
 
 .first-couse.d-flex {
   width: 300px;
+  text-transform: uppercase;
 }
 
 .course-column-one:not(:last-child) {
